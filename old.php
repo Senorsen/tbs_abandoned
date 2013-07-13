@@ -156,7 +156,7 @@ if(!-[1,]&&!window.XMLHttpRequest) $("#soundplayerlayer").html("您在使用IE6�
 <div id="allstat"><img src="images/loading.gif" /></div><br><br>
 <div id="users"><img src="images/loading.gif" /></div>
 <br>
-<div id="bottomcl"><hr><p>Written By <a href="http://www.baidu.com/p/%E8%BF%9E%E4%BA%91%E5%B0%8F%E6%A3%AE%E6%A3%AE?from=tieba" target="_blank"><b>连云小森森</b></a></p><p><a href="/">返回lyxss.tk首页</a></p><br></div>
+<div id="bottomcl"><hr><p>Powered By <a href="http://www.baidu.com/p/%E8%BF%9E%E4%BA%91%E5%B0%8F%E6%A3%AE%E6%A3%AE?from=tieba" target="_blank"><b>连云小森森</b></a></p><p><a href="http://lyxss.tk">lyxss.tk首页</a></p><br></div>
 <br>
 <div class="hide">
 			<div id='inline_content' style='padding:10px; background:#fff;'>
