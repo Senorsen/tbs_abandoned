@@ -49,7 +49,7 @@ function signone(uid,tb,jid,tid)
 	$("#statu"+jid+"t"+tid).html(failtype==2&&(!/封/.test(retstr))?retstr+"(重试中...)":retstr);
 	if((failtype!=2||/封/.test(retstr))&&tid>3)
 	{
-		document.getElementsByTagName("table")[jid].getElementsByTagName("tr")[tid-3].innerHTML="";
+		//document.getElementsByTagName("table")[jid].getElementsByTagName("tr")[tid-3].innerHTML="";
 	}
 	return retobj;
 }

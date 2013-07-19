@@ -1,6 +1,10 @@
 ﻿<? require "../Conn/Conn.php";?>
 <?
+header("Pragma: no-cache");
+header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
 header("Content-Type: text/html; charset=utf-8");
+
 if(!isset($_GET["id"]))
 {
 	die('咦，id跑哪去啦？(这儿干脆连json都不用了)');

@@ -1,5 +1,8 @@
 ﻿<?php
 require "../Conn/Conn.php";
+header("Pragma: no-cache");
+header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
 $result=mysql_query("select * from tb_settings where location='all' or location='tbsign'");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
