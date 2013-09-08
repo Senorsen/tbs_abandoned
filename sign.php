@@ -72,12 +72,14 @@ foreach($postdata as $t=>$v)
 {$strsign.=$t."=".$v;}
 $md5sign=strtoupper(md5($strsign."tiebaclient!!!"));
 $postdata['sign']=$md5sign;
-			var_dump($postdata);
+			//var_dump($postdata);
 			//echo json_encode((object)$postdata);
 //echo http_build_query($postdata);
 $str=curlFetch($tbsurl,$myheader,"",$postdata);
 //echo $str;
 $obj=json_decode($str,true);
+if(is_null($obj)) myexit(2,'未知错误：返回值NULL',$desc,$tb);
+//var_dump($obj);
 if($obj["error_code"]==0)
 {
 	myexit(0,'增加'.$obj["user_info"]["sign_bonus_point"].'经验值',$desc,$tb);
